@@ -274,53 +274,6 @@
 }
 /*** Navbar End ***/
 
-/*** Hero Video Start ***/
-.header-video-container {
-    position: relative;
-    width: 100%;
-    height: 700px;
-    overflow: hidden;
-    background-color: #111; /* Fallback background */
-}
-
-#hero-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    object-fit: cover;
-}
-
-.header-video-container .carousel-caption {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    padding-top: 120px;
-    background: rgba(0, 0, 0, .7);
-    display: flex;
-    align-items: center;
-    z-index: 1; /* Ensure content is above the video */
-}
-
-@media (max-width: 991px) {
-    .header-video-container .carousel-caption {
-        padding-top: 45px;
-    }
-
-    .header-video-container {
-        height: 500px; /* Adjust height for smaller screens */
-    }
-}
-/*** Hero Video End ***/
-
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
@@ -860,6 +813,15 @@
     background: var(--bs-dark);
 }
 /*** copyright end ***/
+
+
+@media (max-width: 767.98px) {
+    .py-5 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+}
+
 
 /* Make all Bootstrap containers flush to the screen */
 @media (max-width: 768px) {
