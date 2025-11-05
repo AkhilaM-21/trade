@@ -14,7 +14,7 @@ html, body {
   overscroll-behavior: none;
 }
 
-/*** Spinner Start ***/
+/*** Spinner ***/
 #spinner {
   opacity: 0;
   visibility: hidden;
@@ -27,41 +27,12 @@ html, body {
   visibility: visible;
   opacity: 1;
 }
-/*** Spinner End ***/
-
-/*** Back to Top ***/
-.back-to-top {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  transition: 0.5s;
-  z-index: 99;
-}
 
 /*** Buttons ***/
 .btn {
   font-weight: 600;
   transition: .5s;
 }
-
-.btn-square,
-.btn-sm-square,
-.btn-md-square,
-.btn-lg-square,
-.btn-xl-square {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: normal;
-  padding: 0;
-}
-
-.btn-square { width: 32px; height: 32px; }
-.btn-sm-square { width: 34px; height: 34px; }
-.btn-md-square { width: 44px; height: 44px; }
-.btn-lg-square { width: 56px; height: 56px; }
-.btn-xl-square { width: 66px; height: 66px; }
-
 .btn.btn-primary {
   color: var(--bs-white);
   border: none;
@@ -77,32 +48,6 @@ html, body {
 .btn.btn-light:hover {
   color: var(--bs-white);
   background: var(--bs-primary);
-}
-
-/*** Topbar ***/
-.topbar .dropdown-toggle::after {
-  border: none;
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  vertical-align: middle;
-  margin-left: 8px;
-  color: var(--bs-primary);
-}
-
-.topbar .dropdown .dropdown-menu a:hover {
-  background: var(--bs-primary);
-  color: var(--bs-white);
-}
-
-.topbar .dropdown .dropdown-menu {
-  transform: rotateX(0deg);
-  visibility: visible;
-  background: var(--bs-light);
-  padding-top: 11px;
-  border: 0;
-  transition: .5s;
-  opacity: 1;
 }
 
 /*** Navbar ***/
@@ -122,90 +67,76 @@ html, body {
   color: var(--bs-dark);
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-  color: var(--bs-primary);
-}
-
 .navbar-light .navbar-brand img {
   max-height: 60px;
+  width: auto;
+  height: auto;
   transition: .5s;
 }
+
 .sticky-top.navbar-light .navbar-brand img {
   max-height: 45px;
 }
 
-/*** Navbar for Desktop ***/
-@media (min-width: 992px) {
-  .navbar-light {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
-    z-index: 999;
-  }
-
-  .sticky-top.navbar-light {
-    position: fixed;
-    background: var(--bs-light);
-  }
-
-  .navbar .nav-item .dropdown-menu {
-    display: block;
-    visibility: hidden;
-    top: 100%;
-    transform: rotateX(-75deg);
-    transform-origin: 0% 0%;
-    border: 0;
-    border-radius: 10px;
-    transition: .5s;
-    opacity: 0;
-  }
-
-  .navbar-light .navbar-nav .nav-link::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 2px;
-    bottom: -1px;
-    left: 50%;
-    background: var(--bs-primary);
-    transition: .5s;
-  }
-
-  .navbar-light .navbar-nav .nav-link:hover::before,
-  .navbar-light .navbar-nav .nav-link.active::before {
-    width: calc(100% - 2px);
-    left: 1px;
-  }
-}
-
-/*** Hero Section ***/
-.bg-breadcrumb {
+/*** Hero / Carousel Section ***/
+.header-video-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
   position: relative;
-  overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/carousel-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 140px 0 60px 0;
-  transition: 0.5s;
 }
 
-.bg-breadcrumb .breadcrumb .breadcrumb-item a {
-  color: var(--bs-white);
+#hero-video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
 }
 
-/*** Sections (Services, Features, Offer, Blog, etc.) ***/
-.service .service-item,
-.feature .feature-item,
-.blog .blog-item,
-.team .team-item,
-.testimonial .testimonial-item {
+.carousel-caption {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.carousel-caption h1 {
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+.carousel-caption p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/*** Section Images Fix ***/
+img, video {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
   border-radius: 10px;
+}
+
+/*** Fix Service / Blog / Team / Testimonial images ***/
+.service .service-item img,
+.blog .blog-item img,
+.team .team-item img,
+.testimonial .testimonial-item img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/*** Features & Cards ***/
+.feature .feature-item {
+  text-align: center;
+  border-radius: 10px;
+  background: var(--bs-light);
+  border: 1px solid transparent;
   transition: 0.5s;
-  overflow: hidden;
+}
+.feature .feature-item:hover {
+  border: 1px solid var(--bs-primary);
 }
 
 /*** Footer ***/
@@ -226,25 +157,6 @@ html, body {
 }
 .copyright {
   background: var(--bs-dark);
-}
-
-/*** Medium Devices ***/
-@media (max-width: 991.98px) {
-  .navbar-light .navbar-toggler {
-    padding: 10px 20px;
-    border: 1px solid var(--bs-primary);
-    color: var(--bs-primary);
-  }
-
-  .navbar-light .navbar-collapse {
-    margin-top: 15px;
-    border-top: 1px solid #DDDDDD;
-  }
-
-  .navbar-light .navbar-nav .nav-link {
-    padding: 10px 0;
-    color: var(--bs-dark);
-  }
 }
 
 /* ======================================
@@ -275,10 +187,14 @@ html, body {
     overflow-x: hidden !important;
   }
 
+  .navbar-brand img {
+    max-height: 45px !important;
+    height: auto !important;
+  }
+
   .header-video-container {
     width: 100% !important;
     height: auto !important;
-    overflow: hidden !important;
   }
 
   #hero-video {
@@ -294,8 +210,7 @@ html, body {
   }
 
   .carousel-caption h1 {
-    font-size: 1.4rem !important;
-    line-height: 1.3 !important;
+    font-size: 1.3rem !important;
   }
 
   .carousel-caption p {
@@ -313,16 +228,27 @@ html, body {
     padding-right: 10px !important;
   }
 
+  /* Responsive image scaling */
+  img, video {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  .service .service-item img,
+  .blog .blog-item img,
+  .team .team-item img,
+  .testimonial .testimonial-item img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 10px;
+  }
+
   [class*="wow"],
   [class*="animated"],
   [style*="transform"],
   [style*="translate"] {
     transform: none !important;
-    overflow-x: hidden !important;
-  }
-
-  .owl-stage-outer,
-  .dropdown-menu {
     overflow-x: hidden !important;
   }
 
