@@ -9,11 +9,12 @@
             }
         }, 1);
     };
-    spinner(0);
+    spinner();
     
     
     // Initiate the wowjs
     new WOW().init();
+
 
     // Sticky Navbar
     $(window).scroll(function () {
@@ -25,112 +26,36 @@
     });
 
 
-    // Hero Header carousel
-    $(".header-carousel").owlCarousel({
-        animateOut: 'fadeOut',
-        items: 1,
-        margin: 0,
-        stagePadding: 0,
-        autoplay: true,
-        smartSpeed: 500,
-        dots: true,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-    });
-
-
-    // attractions carousel
-    $(".blog-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        center: false,
-        dots: false,
-        loop: true,
-        margin: 25,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-right"></i>',
-            '<i class="fa fa-angle-left"></i>'
-        ],
-        responsiveClass: true,
-        responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:2
-            },
-            1200:{
-                items:3
-            }
+    // Back to top, WhatsApp, and Join Now buttons
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) { // Only control the back-to-top button
+            $('.back-to-top').css({ 'opacity': '1', 'visibility': 'visible' });
+        } else {
+            $('.back-to-top').css({ 'opacity': '0', 'visibility': 'hidden' });
         }
     });
-
-
-    // testimonial carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        center: false,
-        dots: true,
-        loop: true,
-        margin: 25,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-right"></i>',
-            '<i class="fa fa-angle-left"></i>'
-        ],
-        responsiveClass: true,
-        responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:2
-            },
-            1200:{
-                items:3
-            }
+    
+    // Add CSS for new buttons
+    var style = document.createElement('style');
+    style.innerHTML = `
+        .whatsapp-btn {
+            bottom: 85px;
         }
-    });
-
-
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 5,
-        time: 2000
-    });
-
-
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
-    }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
-
-
+        .join-now-btn {
+            bottom: 150px;
+        }
+        .whatsapp-btn,
+        .join-now-btn {
+            position: fixed;
+            right: 15px;
+            z-index: 99;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        .back-to-top {
+            opacity: 0;
+            visibility: hidden;
+        }
+    `;
+    document.head.appendChild(style);
 })(jQuery);
-
