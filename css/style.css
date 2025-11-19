@@ -18,20 +18,17 @@
 .back-to-top {
     position: fixed;
     right: 15px;
-    bottom: 15px;
+    bottom: 20px;
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
     z-index: 99;
 }
 
-.whatsapp-btn {
+.call-now-btn {
     position: fixed;
     right: 15px;
-    bottom: 85px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s;
+    bottom: 215px;
     z-index: 99;
 }
 
@@ -39,9 +36,13 @@
     position: fixed;
     right: 15px;
     bottom: 150px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s;
+    z-index: 99;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    right: 15px;
+    bottom: 85px;
     z-index: 99;
 }
 
