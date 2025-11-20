@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Stocker - Stock Market Website Template</title>
+        <title>Tradotsav - Terms & Conditions</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -52,42 +52,10 @@
                 bottom: 20px;
             }
         </style>
-        <style>
-            .contact-add-item {
-  transition: transform 0.3s cubic-bezier(.08,.59,.29,.99), box-shadow 0.3s;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-}
-.contact-add-item:hover {
-  transform: scale(1.07); /* Adjust the 1.07 value as needed for more/less expansion */
-  box-shadow: 0 8px 32px rgba(0,0,0,0.16); /* Optional: gives a 'lift' shadow effect */
-}
-/* Expand effect for contact cards */
-.contact-add-item {
-  transition: transform 0.3s cubic-bezier(.08,.59,.29,.99), box-shadow 0.3s;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-}
-.contact-add-item:hover {
-  transform: scale(1.07);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.16);
-}
-
-/* Expand effect for the Send Message (form) block */
-.bg-light.p-5.rounded.h-100 {
-  transition: transform 0.3s cubic-bezier(.08,.59,.29,.99), box-shadow 0.3s;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-}
-.bg-light.p-5.rounded.h-100:hover {
-  transform: scale(1.04);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.16);
-}
-
-
-        </style>
     </head>
 
     <body>
-
-               <!-- Spinner Start -->
+        <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
@@ -140,7 +108,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="collapse navbar-collapse" id="navbarCollapse"> 
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
@@ -168,11 +136,11 @@
             <!-- Header Start -->
             <div class="container-fluid bg-breadcrumb">
                 <div class="container text-center py-5" style="max-width: 900px;">
-                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Complaint Data</h4>
                     <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item active text-primary">Contact</li>
+                        <li class="breadcrumb-item active text-primary">Complaint Data</li>
                     </ol>    
                 </div>
             </div>
@@ -180,263 +148,145 @@
         </div>
         <!-- Navbar & Hero End -->
 
-        <!-- Contact Start -->
-        <div class="container-fluid contact py-5">
-            <div class="container py-5">
-                <div class="row g-5 justify-content-center">
-
-                    <div class="col-xl-9 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="row g-5">
-                            <div class="col-12">
-                                
-                            <div class="bg-light p-5 rounded wow fadeInUp" data-wow-delay="0.2s">
-                                <h4 class="text-primary">Send Your Message</h4>
-                                <p class="mb-4 text-justify">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                                <form>
-                                    <div class="row g-4">
-                                        <div class="col-md-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
-                                                <label for="name">Your Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
-                                                <label for="email">Your Email</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-floating">
-                                                <input type="phone" class="form-control border-0" id="phone" placeholder="Phone">
-                                                <label for="phone">Your Phone</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="project" placeholder="Project">
-                                                <label for="project">Your Project</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
-                                                <label for="message">Message</label>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="btn btn-primary w-100 py-3">Send Message</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-            </div>
-        </div>
-        <!-- Contact End -->
-
-        <!-- Mobile Contact Info Start -->
-        <div class="container d-lg-none">
-            <div class="row g-4">
-                <div class="col-12">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="icon-mobile me-3" style="background-color: #FF0000;">
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                        <a href="https://www.youtube.com/@telugutradershyam" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="icon-mobile me-3" style="background-color: #2AABEE;">
-                            <i class="fab fa-telegram"></i>
-                        </div>
-                        <a href="https://t.me/telugutradershyam" target="_blank" rel="noopener noreferrer">Telegram Channel</a>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="icon-mobile me-3">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <span>APP: TELUGU TRADER SHYAM</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile Contact Info End -->
-
-<!-- Half Circle Map Footer Section -->
-<section class="footer-map-section position-relative">
-    <!-- Map Background -->
-    <div class="map-curve">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.323624535202!2d78.3973218148778!3d17.49215618801689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f48aa2d613%3A0x464b3398a25ad623!2sKPHB%20Colony%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20500072!5e0!3m2!1sen!2sin!4v1694260000000!5m2!1sen!2sin"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+<div class="container py-5">
+    <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h4 class="text-primary">Complaint Data</h4>
+        <h1 class="display-5 mb-4">Monthly Disposal of Complaints</h1>
+        <p class="mb-0">Updated On 28th OCT 2025</p>
     </div>
 
-    <!-- Arc Icons -->
-    <div class="icon-arc">
-        <a href="https://www.youtube.com/@telugutradershyam" target="_blank" rel="noopener noreferrer" class="icon-container icon1">
-            <div class="icon" style="color: #FF0000; border-color: #FF0000;"><i class="fab fa-youtube"></i></div>
-            <div class="icon-card">YouTube Channel</div>
-        </a>
-        <a href="https://t.me/telugutradershyam" target="_blank" rel="noopener noreferrer" class="icon-container icon2">
-            <div class="icon" style="color: #2AABEE; border-color: #2AABEE;"><i class="fab fa-telegram"></i></div>
-            <div class="icon-card">Telegram Channel</div>
-        </a>
-        <div class="icon-container icon3">
-            <div class="icon"><i class="fas fa-mobile-alt"></i></div>
-            <div class="icon-card">APP: TELUGU TRADER SHYAM</div>
-        </div>
-        <div class="icon-container icon4">
-            <div class="icon"><i class="fab fa-firefox-browser"></i></div>
-            <div class="icon-card">tradotsav.com</div>
-        </div>
+    <div class="table-responsive wow fadeInUp" data-wow-delay="0.3s">
+        <table class="table table-bordered table-striped text-center">
+            <thead class="table-primary">
+                <tr>
+                    <th>Sr No.</th>
+                    <th>Received From</th>
+                    <th>Pending at the end of last month</th>
+                    <th>Received</th>
+                    <th>Resolved*</th>
+                    <th>Pending complaints &gt; 3months</th>
+                    <th>Average Resolution time^ (in days)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Directly From Investor</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>SEBI (Scores)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Smart ODR</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Other Sources (if any)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="fw-bold">
+                    <td colspan="2">Grand Total</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="mt-3 wow fadeInUp" data-wow-delay="0.4s">
+        <small>* Inclusive of complaints of previous months resolved in the current month.</small><br>
+        <small># Inclusive of complaints pending as on the last day of the month.</small><br>
+        <small>^ Average Resolution time is the sum total of time taken to resolve each complaint, in days, in the current month divided by total number of complaints resolved in the current month.</small><br>
+        <small>ATR submission date is considered for calculation of average resolution time (Updated Every month by 5th-7th)</small>
     </div>
 
+    <div class="text-center mx-auto py-5 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 800px;">
+        <h1 class="display-5 mb-4">Annual Disposal of Complaints</h1>
+        <p class="mb-0">Updated On 28th OCT 2025</p>
+    </div>
+
+    <div class="table-responsive wow fadeInUp" data-wow-delay="0.6s">
+        <table class="table table-bordered table-striped text-center">
+            <thead class="table-primary">
+                <tr>
+                    <th>Sr No.</th>
+                    <th>YEAR</th>
+                    <th>C/F From Previous Year</th>
+                    <th>Received</th>
+                    <th>Resolved*</th>
+                    <th>Total Pending#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2023-2024</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2024-2025</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2025-2026*</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="fw-bold">
+                    <td colspan="2">Grand Total</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="mt-3 wow fadeInUp" data-wow-delay="0.7s">
+        <small>*Inclusive of complaints of previous years resolved in the current year</small><br>
+        <small>#Inclusive of complaints pending as on the last day of the year.</small>
+    </div>
+</div>
 
 
 
- 
-</section>
-
-<style>
-/* --- Map + Footer Combined Section --- */
-/* .footer-map-section {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background: #ffffff;
-} */
-
-/* Half Circle Map background */
-.map-curve {
-    position: relative;
-    width: 100%;
-    height: 700px;
-    border-radius: 700px 700px 0 0; /* perfect half circle */
-    overflow: hidden;
-    box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.3);
-}
-
-/* Adjust map inside the curve */
-.map-curve iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    transform: scale(1.2) translateY(8%);
-    filter: brightness(0.9);
-}
-
-/* Icon with Card */
-.icon-container {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.icon-card {
-    background: white;
-    padding: 8px 8px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    font-size: 14px;
-    font-weight: 500;
-    white-space: nowrap;
-    margin-left: 20px;
-}
-
-/* Icon Arc styling */
-.icon-arc {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 100%;
-    height: 400px;
-    transform: translateX(-50%);
-    pointer-events: none;
-}
-
-.icon-arc.d-none-mobile {
-    display: none;
-}
-
-
-.icon {
-    display: flex;
-    position: relative;
-    font-size: 26px;
-    background: white;
-    color: #2ecc71;
-    border-radius: 50%;
-    padding: 15px;
-    border: 2px solid #2ecc71;
-    box-shadow: 0 0 15px rgba(46, 204, 113, 0.3);
-    pointer-events: auto;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.icon:hover {
-    background: #2ecc71;
-    color: #fff;
-    transform: scale(1.2);
-    box-shadow: 0 0 25px rgba(46, 204, 113, 0.7);
-}
-
-/* Icon container positioning along curve */
-.icon1 { top: 20%; left: 15%; transform: translate(-50%, -50%); }
-.icon2 { top: -10%; left: 20%; transform: translate(-50%, -50%); }
-.icon3 { top: -10%; right: 20%; transform: translate(50%, -50%); }
-.icon4 { top: 20%; right: 14%; transform: translate(50%, -50%); }
-
-/* Footer inside curved area */
-.footer-content {
-    background: #000; 
-    color: #fff;
-    border-radius: 400px 400px 0 0; /* same radius as map for seamless merge */
-    margin-top: -120px; /* pulls footer upward to meet the curve */
-    padding-top: 200px; /* keeps text inside curve */
-}
-
-/* Responsive Tweaks */
-@media (max-width: 768px) {
-    .icon-arc {
-        display: none;
-    }
-    .map-curve, .footer-content {
-        border-radius: 200px 200px 0 0;
-        height: 250px;
-    }
-    .icon-mobile {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 20px;
-        background: var(--bs-primary);
-        color: white;
-        border-radius: 50%;
-        width: 45px;
-        height: 45px;
-        flex-shrink: 0;
-    }
-    /* .icon-container .icon { font-size: 18px; padding: 10px; } */
-    /* .icon1 { top: 60%; left: 15%; } */
-    /* .icon2 { top: 35%; left: 35%; } */
-    /* .icon3 { top: 35%; right: 35%; } */
-    /* .icon4 { top: 60%; right: 15%; } */
-}
-</style>
 
 
 <!-- Footer Start -->
@@ -514,14 +364,14 @@
 
 
         <!-- Back to Top -->
+        <a href="tel:+919346383850" class="btn btn-success btn-lg-square rounded-circle call-now-btn" title="Call Now">
+            <i class="fa fa-phone-alt"></i>
+        </a>
         <a href="https://cosmofeed.com/vig/674443174529db00131492bd" class="btn btn-primary btn-lg-square rounded-circle join-now-btn" title="Join Now">
             <i class="fa fa-user-plus"></i>
         </a>
         <a href="https://wa.me/919346383850" class="btn btn-success btn-lg-square rounded-circle whatsapp-btn" target="_blank" title="Chat with Us">
             <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="tel:+919346383850" class="btn btn-success btn-lg-square rounded-circle call-now-btn" title="Call Now">
-            <i class="fa fa-phone-alt"></i>
         </a>
         <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
